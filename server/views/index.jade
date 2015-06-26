@@ -1,0 +1,13 @@
+extends ../includes/layout
+
+block main-content
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-brand(href="/") Practice d3.js
+                h6 - Made with Node, Express, Jade, Stylus, Angular, d3.js
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav.pull-right
+                    li
+                        a(href="/") Home
+    section
+        div(ng-view, id="viewContainer" class='center-block')

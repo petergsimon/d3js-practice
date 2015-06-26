@@ -1,0 +1,8 @@
+.panel.panel-primary
+    .panel-heading.text-center Charts
+    .panel-body
+        .row(ng-repeat="chart in charts")
+            .col-md-4
+                a(ng-href='../charts/{{chart.name}}/{{chart.name}}') Name: {{chart.name}}
+            .col-md-4 Description: {{chart.description}}
+            .col-md-4 DateAdded: {{chart.dateAdded | date: 'MMM d'}}
